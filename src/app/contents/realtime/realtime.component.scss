@@ -1,0 +1,31 @@
+.realtime {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../../../assets/images/steno2.jpeg) center 0% no-repeat;
+    background-size: cover;
+    div.textBox {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        width: 30%;
+        min-width: 450px;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.5);
+        p {
+            margin-bottom: 0.5rem;
+        }
+        .title {
+            text-align: left;
+            height: 100px;
+            line-height: 6.5rem;
+            font-size: 3rem;
+            background-size: contain;
+        }
+        .desc {
+            text-align: left;
+        }
+    }
+}

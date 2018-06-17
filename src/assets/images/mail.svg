@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="42px" viewBox="0 0 52 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-677.000000, -2353.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="main_접수-copy" transform="translate(531.000000, 1972.000000)">
+                <g id="Mail" transform="translate(146.000000, 381.000000)">
+                    <g id="mail">
+                        <g id="Octicons">
+                            <g id="mail">
+                                <path d="M0,4.65957447 L0,37.8510638 C0,40.1329787 1.67142857,42 3.71428571,42 L48.2857143,42 C50.3285714,42 52,40.1329787 52,37.8510638 L52,4.65957447 C52,2.37765957 50.3285714,0.510638298 48.2857143,0.510638298 L3.71428571,0.510638298 C1.67142857,0.510638298 0,2.37765957 0,4.65957447 Z M48.2857143,4.65957447 L26,25.4042553 L3.71428571,4.65957447 L48.2857143,4.65957447 Z M3.71428571,10.8829787 L18.5714286,23.3297872 L3.71428571,35.7765957 L3.71428571,10.8829787 Z M7.42857143,37.8510638 L20.4285714,25.4042553 L26,31.6276596 L31.5714286,25.4042553 L44.5714286,37.8510638 L7.42857143,37.8510638 Z M48.2857143,35.7765957 L33.4285714,23.3297872 L48.2857143,10.8829787 L48.2857143,35.7765957 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
