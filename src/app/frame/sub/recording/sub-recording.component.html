@@ -1,0 +1,40 @@
+<section id="subrecording" class="subRecording">
+    <nav class="sub-menu nav-items">
+        <div class="header-menu">
+            <ul>
+                <li><a id="recordingTabNo1" class="active" (click)="onClickTab(1)">녹취록&회의록</a></li>
+                <li><a id="recordingTabNo2" (click)="onClickTab(2)">외국어속기</a></li>
+                <li><a id="recordingTabNo3" (click)="onClickTab(3)">녹음기 대여</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article *ngIf="tabNo === 1" class="meeting">
+        <div class="clearfix">
+            <div class="recording-meeting"></div>
+            <div class="recording-form"></div>
+        </div>
+
+        <p class="clearfix">음성녹음기기(스마트폰, 녹음기 등)나 음성파일 원본만으로는 법적 증거능력을 갖지 못하므로 공인속기사에게 원본음성을 전달하신 후 녹취록작성을 의뢰하셔야 합니다. 완성된 녹취록에는 본 녹취록을 작성한 속기사의 도장과 함께 속기사무소의 직인을 찍어 녹취록이 녹음된 원본 내용과 똑같이 작성되었음을 증명하게 됩니다. </p>
+        <p><strong>녹취록이 필요한 경우</strong><br/> -말과 구두로만 존재하고 서류상의 근거나 증거가 없어서 후일 법정 분쟁의 소지가 될 수 있는 모든 사건<br/> 이혼이나 간통과 관련하여 증거가 필요하거나 불충분할 경우<br/> -계약서의 분실 또는 구두계약으로 인해 증거가 없거나 불충분하여 법적분쟁이나 피해가 야기될 수 있는 경우<br/> -소송 중 증인이 법정출석에 응하지 않거나 불출석할 경우<br/> -타인의 거짓말에
+            의해 본인의 피해가 심각하게 우려될 경우<br/> -상습적인 공갈 협박에 대해 서류상으로 그 증거를 나타내지 못할 경우<br/> -서류가 아닌 구두의 유언에 대한 녹취일 경우<br/> -후일 법적분쟁의 소지를 예상하여 증거자료를 미리 확보하고자 할 경우<br/>
+            <p>기록의 궁극적인 목적은 활용입니다. 기록속기사무소는 기록물을 좀 더 쉽고 편리하게 활용할 수 있도록 녹취록, 회의록, 출장속기 업무를 전문으로 하고 있습니다</p>
+    </article>
+
+    <article *ngIf="tabNo === 2" class="foreign">
+        <div class="recording-foreign">
+            <p>
+                기록속기사무소는 실력있는 통역사와의 협업을 통해 외국어로 녹음되어 있는 음성파일도 녹취록 및 회의록 제작이 가능합니다.
+            </p>
+        </div>
+    </article>
+
+
+    <article *ngIf="tabNo === 3" class="mic">
+        <div class="recording-mic">
+            <p>기록속기사무소에서는 효율적인 녹음방법에 대해서도 상담해 드리며 녹음기도 대여해 드립니다. <br /> 녹취전용 녹음기 대여 / 10만 원(보증금) / 하루에 1만원(녹취록/회의록 의뢰시 무료대여 )
+            </p>
+        </div>
+    </article>
+
+</section>

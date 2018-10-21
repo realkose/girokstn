@@ -1,6 +1,7 @@
 section {
     position: relative;
-    height: 400px;
+    height: 100%;
+    // min-height: 200px;
     article {
         position: relative;
         float: left;
@@ -10,7 +11,7 @@ section {
             text-align: left;
             left: 8%;
             position: relative;
-            top: 10%;
+            top: 25%;
             h2 {
                 font-size: 3rem;
             }
@@ -20,11 +21,11 @@ section {
             bottom: 10%;
             left: 8%;
             width: 138px;
-            height: 76px;
-            font-size: 1.5rem;
+            height: 54px;
+            font-size: 1.2rem;
             background: transparent;
-            border: 2px solid white;
-            line-height: 76px;
+            border: 1px solid white;
+            line-height: 50px;
             cursor: pointer;
         }
     }
@@ -33,34 +34,34 @@ section {
         background: #4A4A4A;
     }
     article.support {
-        width: 40%;
-        background: #757077;
+        width: 100%;
+        background: #5a5a5a;
         div.textBox {
-            text-align: right;
-            left: -10%;
+            text-align: left;
+            left: 10%;
             h2 {
                 font-size: 3rem;
             }
         }
         div.contact {
             text-align: right;
-            width: 70%;
+            width: 238px;
             height: 60px;
             position: absolute;
+            top: 40%;
             right: 10%;
             font-size: 1.5rem;
             line-height: 60px;
             padding-left: 60px;
         }
         div.contact.phone {
-            bottom: 5%;
+            right: 30%;
             background: url(../../../assets/images/phone.svg) left center no-repeat;
-            background-size: 10%;
+            background-size: 12%;
         }
         div.contact.mail {
-            bottom: 20%;
             background: url(../../../assets/images/mail.svg) left center no-repeat;
-            background-size: 10%;
+            background-size: 12%;
         }
     }
 }

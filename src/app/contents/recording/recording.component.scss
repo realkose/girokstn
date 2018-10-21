@@ -8,13 +8,13 @@
         position: relative;
         top: 15%;
         left: 10%;
-        width: 30%;
+        width: 28%;
         min-width: 450px;
-        color: #8B572A;
+        color: #333;
         text-align: center;
         // margin: 0 auto;
-        padding: 15px;
-        background: rgba(255, 255, 255, 0.5);
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.8);
         p {
             // margin-top: 0;
             margin-bottom: 0.5rem;
@@ -28,6 +28,20 @@
         }
         .desc {
             text-align: left;
+        }
+        div.btn-recording {
+            position: relative;
+            /* bottom: 20%; */
+            /* left: 8%; */
+            width: 138px;
+            height: 54px;
+            font-size: 1.2rem;
+            color: #333;
+            background: transparent;
+            border: 1px solid #333;
+            margin-top: 50px;
+            line-height: 50px;
+            cursor: pointer;
         }
     }
 }

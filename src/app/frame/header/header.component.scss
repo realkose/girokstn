@@ -14,6 +14,7 @@ header {
         height: 43px;
         background: url(../../../assets/images/header-logo.svg);
         background-size: cover;
+        cursor: pointer;
     }
     .header-menu {
         ul {
@@ -21,12 +22,47 @@ header {
             padding-right: 30px;
             padding-left: 20%;
             li {
+                position: relative;
                 display: inline-block;
                 padding-top: 24px;
                 margin-left: 60px;
                 text-decoration: none;
                 list-style: none;
+                cursor: pointer;
+                a {
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: black;
+                }
             }
         }
+    }
+    .desk-add-menu a:before,
+    .nav-items a:before,
+    .nav-items .active a:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 2px;
+        margin: auto;
+        background-color: black;
+        -webkit-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+    .desk-add-menu a.active,
+    .nav-items a.active {
+        font-weight: 600 !important;
+    }
+    .desk-add-menu a:hover:before,
+    .desk-add-menu a.active:before,
+    .nav-items a:hover:before,
+    .nav-items a.active:before,
+    .nav-items .active a:before {
+        width: 100%;
     }
 }

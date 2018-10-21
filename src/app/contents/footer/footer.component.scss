@@ -2,15 +2,26 @@
     position: relative;
     left: 0;
     bottom: 0;
+    height: 120px;
     width: 100%;
-    height: 60px;
-    background: #555;
+    padding-top: 10px;
+    background: #333;
     color: white;
     z-index: 50;
     span {
         display: inline-block;
-        padding-top: 10px;
+        padding-top: 20px;
         font-size: 0.8rem;
         margin: 0 10px;
+        a.yellow {
+            color: #fcce00;
+            padding-top: 0;
+            margin: 0;
+        }
     }
+}
+
+.main .footer {
+    min-height: 120px;
+    height: 100%;
 }

@@ -1,0 +1,190 @@
+.subSteno {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: calc(100% - 143px);
+    padding: 66px 15% 0;
+    background: white;
+    overflow: hidden;
+    z-index: 50;
+    .sub-menu {
+        position: relative;
+        text-align: left;
+        left: 0;
+        top: 50px;
+        margin-bottom: 10%;
+        li {
+            display: inline-block;
+            list-style: none;
+            margin-right: 30px;
+            a {
+                cursor: pointer;
+            }
+        }
+        .header-menu {
+            ul {
+                li {
+                    position: relative;
+                    display: inline-block;
+                    padding-top: 15px;
+                    text-decoration: none;
+                    list-style: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .desk-add-menu a:before,
+    .nav-items a:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 5px;
+        // bottom: -5px;
+        width: 0%;
+        height: 2px;
+        margin: auto;
+        background-color: black;
+        -webkit-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+    .desk-add-menu a.active,
+    .nav-items a.active {
+        font-weight: 600 !important;
+    }
+    .desk-add-menu a:hover:before,
+    .desk-add-menu a.active:before,
+    .nav-items a:hover:before,
+    .nav-items a.active:before {
+        width: 100%;
+    }
+    article {
+        position: relative;
+        top: 10%;
+        margin-bottom: 100px;
+        .clearfix {
+            margin-bottom: 30px;
+        }
+        p {
+            text-align: left;
+        }
+        .steno-image1 {
+            display: inline-block;
+            width: 400px;
+            left: 0;
+            height: 300px;
+            padding-top: 30px;
+            padding-bottom: 20%;
+            text-align: left;
+            line-height: 2rem;
+            background: url(../../../../assets/images/3_1_1.jpg) left top no-repeat;
+            background-size: contain;
+            margin-right: 2%;
+        }
+        .steno-image2 {
+            display: inline-block;
+            width: 400px;
+            height: 300px;
+            padding-top: 30px;
+            padding-bottom: 20%;
+            text-align: left;
+            line-height: 2rem;
+            background: url(../../../../assets/images/3_1_2.jpg) left top no-repeat;
+            background-size: cover;
+        }
+        .steno-image3 {
+            display: inline-block;
+            width: 600px;
+            height: 400px;
+            padding-top: 30px;
+            padding-bottom: 20%;
+            text-align: left;
+            line-height: 2rem;
+            background: url(../../../../assets/images/3_2_1.jpg) left top no-repeat;
+            background-size: cover;
+        }
+        .steno-image4 {
+            display: inline-block;
+            width: 400px;
+            left: 0;
+            min-height: 300px;
+            padding-top: 30px;
+            padding-bottom: 20%;
+            text-align: left;
+            line-height: 2rem;
+            background: url(../../../../assets/images/3_3_1.jpg) left top no-repeat;
+            background-size: contain;
+            margin-right: 2%;
+        }
+        .steno-image5 {
+            display: inline-block;
+            width: 500px;
+            min-height: 300px;
+            padding-top: 30px;
+            padding-bottom: 20%;
+            text-align: left;
+            line-height: 2rem;
+            background: url(../../../../assets/images/3_3_2.jpg) left top no-repeat;
+            background-size: cover;
+        }
+        .recording-foreign {
+            min-height: 400px;
+            padding-top: 30px;
+            padding-left: 55%;
+            padding-bottom: 20%;
+            text-align: left;
+            line-height: 2rem;
+            background: url(../../../../assets/images/foreign.jpg) left top no-repeat;
+            background-size: 50%;
+        }
+        .steno-translate {
+            min-height: 400px;
+            padding-top: 30px;
+            padding-left: 55%;
+            padding-bottom: 20%;
+            text-align: left;
+            line-height: 2rem;
+            background: url(../../../../assets/images/3_4_1.jpg) left top no-repeat;
+            background-size: 50%;
+        }
+        .main-shape {
+            position: relative;
+            margin: 0 auto;
+            top: 20%;
+            margin-bottom: 5%;
+            width: 100%;
+            min-width: 450px;
+            text-align: center;
+            background: transparent;
+            .circle {
+                width: 200px;
+                height: 200px;
+                position: relative;
+                display: inline-block;
+                border: 5px solid #333;
+                border-radius: 100px;
+                line-height: 200px;
+                margin: 0 50px;
+            }
+            .circle:after {
+                content: "\f105";
+                font-family: FontAwesome;
+                font-style: normal;
+                font-size: 30px;
+                font-weight: normal;
+                text-decoration: inherit;
+                color: #000;
+                padding-right: 0.5em;
+                position: absolute;
+                top: 0px;
+                right: -80px;
+            }
+            .circle:last-child:after {
+                content: "";
+            }
+        }
+    }
+}

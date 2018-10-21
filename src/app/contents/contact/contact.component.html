@@ -1,8 +1,13 @@
-<section>
+<section id="appContact">
     <article class="location">
         <div class="textBox">
             <h2>찾아오시는 길</h2>
         </div>
+        <!-- this creates a google map on the page with the given lat/lng from -->
+        <!-- the component as the initial center of the map: -->
+        <agm-map [latitude]="lat" [longitude]="lng" [zoom]=15>
+            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
 
     </article>
     <article class="quick">
@@ -13,14 +18,15 @@
         <div class="form">
             <form>
                 <div class="input-group">
-                    <input type="text" name="name" class="form-control" placeholder="이름">
-                    <input type="text" name="contact" class="form-control" placeholder="연락처">
+                    <input type="text" name="name" class="form-control" placeholder="이름" (click)="alert()">
+                    <input type="text" name="contact" class="form-control" placeholder="연락처" (click)="alert()">
                 </div>
                 <div class="input-group">
-                    <input type="text" name="email" class="form-control" placeholder="이메일">
+                    <input type="text" name="email" class="form-control" placeholder="이메일" (click)="alert()">
                 </div>
                 <div class="input-group">
-                    <textarea name="desc" class="form-control" placeholder="내용"></textarea>
+                    <textarea name="desc" class="form-control" placeholder="내용" (click)="alert()"></textarea>
+                    <button class="btn-query" (click)="alert()">문의하기</button>
                 </div>
             </form>
         </div>

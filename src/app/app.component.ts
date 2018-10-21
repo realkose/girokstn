@@ -1,6 +1,11 @@
-import { Component } from '@angular/core';
+import { MainComponent } from './frame/main/main.component';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Component, ViewChild } from '@angular/core';
 // import { AngularFirestore } from 'angularfire2/firestore';
 import { Observable } from 'rxjs/Observable';
+import 'jquery'; // Import jQuery
+import 'fullpage.js'; // Import fullpage.js
+declare var $:any;
 
 @Component({
   selector: 'app-root',
@@ -9,7 +14,46 @@ import { Observable } from 'rxjs/Observable';
 })
 export class AppComponent {
 
-  constructor() {
+  main: any;
+  private router = ActivatedRoute;
+
+    constructor(
+      private route: ActivatedRoute, private redirector: Router
+    ) {    }
+
+  onActivate(componentRef){
+    let isSub = $('#subPage');
+    if (isSub.length > 0) {
+      return false;
+    } else {
+      console.log('main');
+      this.main = componentRef;
+    }
   }
 
+  moveMenu(menu: string) {
+    let isSub = $('#subPage');
+    
+    console.log(isSub);
+    if (isSub.length > 0) {
+      if (menu === 'appInfo') {
+        this.redirector.navigate(['/sub/info']);
+      } else if (menu === 'appRecording') {
+        this.redirector.navigate(['/sub/recording']);
+      } else if (menu === 'appSteno') {
+        this.redirector.navigate(['/sub/steno']);
+      } else if (menu === 'appProcess') {
+        this.redirector.navigate(['/sub/process']);
+      } else if (menu === 'appContact') {
+        this.redirector.navigate(['/']);
+        // console.log(this.main);
+        let main = this.main 
+        if(main) {
+            setTimeout(function(){ main.moveMain(menu);}, 300);
+         };
+      }
+    } else {
+      this.main.moveMain(menu);
+    }
+  }
 }

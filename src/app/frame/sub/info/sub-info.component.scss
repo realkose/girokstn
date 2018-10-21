@@ -1,0 +1,105 @@
+.subInfo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: calc(100% - 143px);
+    padding: 66px 15% 0;
+    background: white;
+    overflow: hidden;
+    z-index: 50;
+    .sub-menu {
+        position: relative;
+        text-align: left;
+        left: 0;
+        top: 50px;
+        margin-bottom: 10%;
+        li {
+            display: inline-block;
+            list-style: none;
+            margin-right: 30px;
+            a {
+                cursor: pointer;
+            }
+        }
+        .header-menu {
+            ul {
+                li {
+                    position: relative;
+                    display: inline-block;
+                    padding-top: 15px;
+                    text-decoration: none;
+                    list-style: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .desk-add-menu a:before,
+    .nav-items a:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 5px;
+        // bottom: -5px;
+        width: 0%;
+        height: 2px;
+        margin: auto;
+        background-color: black;
+        -webkit-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+    .desk-add-menu a.active,
+    .nav-items a.active {
+        font-weight: 600 !important;
+    }
+    .desk-add-menu a:hover:before,
+    .desk-add-menu a.active:before,
+    .nav-items a:hover:before,
+    .nav-items a.active:before {
+        width: 100%;
+    }
+    article {
+        position: relative;
+        top: 10%;
+        .info-greeting {
+            min-height: 400px;
+            padding-top: 30px;
+            padding-left: 65%;
+            padding-bottom: 20%;
+            text-align: left;
+            line-height: 2rem;
+            background: url(../../../../assets/images/greeting.jpg) left top no-repeat;
+            background-size: 60%;
+        }
+        .info-pic {
+            height: 500px;
+            padding-top: 50px;
+            padding-left: 40%;
+            margin-bottom: 100px;
+            text-align: left;
+            line-height: 2rem;
+            background: url(../../../../assets/images/profile_k.jpg) left no-repeat;
+            background-size: contain;
+        }
+        .info-pic.info-reverse {
+            padding-right: 40%;
+            padding-left: 0;
+            text-align: right;
+            background: url(../../../../assets/images/profile_h.jpg) right no-repeat;
+            background-size: contain;
+        }
+        .info-map {
+            min-height: 400px;
+            padding-top: 30px;
+            /* padding-left: 65%; */
+            /* padding-bottom: 20%; */
+            text-align: left;
+            line-height: 2rem;
+            background: url(../../../../assets/images/sub_map.jpg) center top no-repeat;
+            background-size: contain;
+        }
+    }
+}

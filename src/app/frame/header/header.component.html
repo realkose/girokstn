@@ -1,17 +1,18 @@
-<header>
-    <div class="">
-        <div class="header-logo">
+<header id="header">
+    <div class="nav-items">
+        <div routerLink="/" class=" header-logo ">
         </div>
         <div class="header-menu">
-            <ul>
-                <li><a href="" ng-click="scrollTo('foo')">회사소개</a></li>
-                <li><a href="" ng-click="scrollTo('foo')">녹취록</a></li>
-                <li><a href="" ng-click="scrollTo('foo')">회의록</a></li>
-                <li><a href="" ng-click="scrollTo('foo')">실시간속기</a></li>
-                <li><a href="" ng-click="scrollTo('foo')">접수</a></li>
-                <li><a href="" ng-click="scrollTo('foo')">요금</a></li>
-                <li><a href="" ng-click="scrollTo('foo')">고객지원</a></li>
-                <li><a href="" ng-click="scrollTo('foo')">빠른상담</a></li>
+            <ul id="mainMenu">
+                <li data-menuanchor="firstPage"><a id="appInfo" class="headerAppInfo active" (click)="onClickMenu('appInfo')">회사소개</a></li>
+                <li data-menuanchor="secondPage"><a id="appRecording" class="headerAppRecording" (click)="onClickMenu('appRecording')">녹취서비스</a></li>
+                <li data-menuanchor="thirdPage"><a id="appSteno" class="headerAppSteno" (click)="onClickMenu('appSteno')">속기서비스</a></li>
+                <li data-menuanchor="fourthPage"><a id="appProcess" class="headerAppProcess" (click)="onClickMenu('appProcess')">절차</a></li>
+                <li data-menuanchor="fifthPage"><a id="appContact" class="headerAppContact" (click)="onClickMenu('appContact')">접수</a></li>
+                <li><a id="appPhoto" class="headerAppPhoto" (click)="alert()">포토갤러리</a></li>
+                <!--<li><a class="headerAppInfo " (click)="scroll(appInfo) ">요금</a></li>
+                <li><a class="headerAppInfo " (click)="scroll(appInfo) ">고객지원</a></li>-->
+                <!--<li><a href=" " ng-click="scrollTo( 'foo') ">빠른상담</a></li>-->
             </ul>
         </div>
     </div>

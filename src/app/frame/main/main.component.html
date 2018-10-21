@@ -1,9 +1,11 @@
-<main class="main">
-    <app-info></app-info>
-    <app-recording></app-recording>
-    <app-meeting></app-meeting>
-    <app-realtime></app-realtime>
-    <app-support></app-support>
-    <app-contact></app-contact>
-    <app-footer></app-footer>
+<main #fullpage id="fullpage" class="main">
+    <app-info class="section welcome-section fp-section fp-table"></app-info>
+    <app-recording class="section welcome-section fp-section fp-table"></app-recording>
+    <app-meeting class="section welcome-section fp-section fp-table"></app-meeting>
+    <app-realtime class="section welcome-section fp-section fp-table"></app-realtime>
+    <section class="section welcome-section fp-section fp-table">
+        <!--<app-support></app-support>-->
+        <app-contact></app-contact>
+        <app-footer></app-footer>
+    </section>
 </main>

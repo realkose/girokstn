@@ -1,4 +1,4 @@
-.info {
+.steno {
     position: relative;
     width: 100%;
     height: 100%;
@@ -23,7 +23,21 @@
             background-size: contain;
         }
         .desc {
-            text-align: left;
+            text-align: right;
+        }
+        div.btn-steno {
+            position: relative;
+            float: right;
+            /* bottom: 20%; */
+            /* left: 8%; */
+            width: 138px;
+            height: 54px;
+            font-size: 1.2rem;
+            background: transparent;
+            border: 1px solid white;
+            margin-top: 50px;
+            line-height: 50px;
+            cursor: pointer;
         }
     }
 }

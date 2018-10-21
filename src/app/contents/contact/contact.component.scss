@@ -1,6 +1,7 @@
 section {
     position: relative;
-    height: 400px;
+    height: 100%;
+    min-height: 300px;
     article {
         position: relative;
         float: left;
@@ -11,9 +12,18 @@ section {
             left: 10%;
             position: relative;
             top: 10%;
+            z-index: 10;
             h2 {
                 font-size: 3rem;
             }
+        }
+        agm-map {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
         }
         div.btn-apply {
             position: absolute;
@@ -29,7 +39,7 @@ section {
         }
         .form {
             position: relative;
-            top: 50px;
+            top: 150px;
             margin: 0 6%;
             .input-group {
                 margin: 10px 0;
@@ -43,12 +53,24 @@ section {
                 textarea {
                     height: 100px;
                 }
+                .btn-query {
+                    width: 150px;
+                    margin-left: 10px;
+                    border-radius: .25em;
+                    background: #fff;
+                    transition: all 0.2s;
+                    cursor: pointer;
+                }
+                .btn-query:hover {
+                    background: #f1f1f1;
+                    transition: all 0.2s;
+                }
             }
         }
     }
     article.location {
         width: 40%;
-        background: url(../../../assets/images/map_sample.png) no-repeat;
+        // background: url(../../../assets/images/map_sample.png) no-repeat;
         background-size: cover;
     }
     article.quick {

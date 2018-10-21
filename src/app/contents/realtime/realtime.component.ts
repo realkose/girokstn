@@ -12,4 +12,8 @@ export class RealtimeComponent implements OnInit {
   ngOnInit() {
   }
 
+  alert() {
+    window.alert('준비중입니다.');
+  }
+  
 }

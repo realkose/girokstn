@@ -1,24 +1,24 @@
-.realtime {
+.process {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../../../assets/images/steno2.jpeg) center 0% no-repeat;
+    background: url(../../../assets/images/bg_neutro.jpg) no-repeat;
     background-size: cover;
     div.textBox {
-        position: absolute;
-        top: 15%;
-        left: 10%;
+        position: relative;
+        margin: 0 auto;
+        top: 10%;
         width: 30%;
         min-width: 450px;
-        color: white;
+        color: #333;
         text-align: center;
         padding: 15px;
-        background: rgba(0, 0, 0, 0.5);
+        background: transparent;
         p {
             margin-bottom: 0.5rem;
         }
         .title {
-            text-align: left;
+            // text-align: left;
             height: 100px;
             line-height: 6.5rem;
             font-size: 3rem;
@@ -27,5 +27,53 @@
         .desc {
             text-align: left;
         }
+    }
+    .main-shape {
+        position: relative;
+        margin: 0 auto;
+        top: 20%;
+        width: 100%;
+        min-width: 450px;
+        text-align: center;
+        background: transparent;
+        .circle {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            display: inline-block;
+            border: 5px solid #333;
+            border-radius: 100px;
+            line-height: 200px;
+            margin: 0 50px;
+        }
+        .circle:after {
+            content: "\f105";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-size: 30px;
+            font-weight: normal;
+            text-decoration: inherit;
+            color: #000;
+            padding-right: 0.5em;
+            position: absolute;
+            top: 0px;
+            right: -80px;
+        }
+        .circle:last-child:after {
+            content: "";
+        }
+    }
+    div.btn-process {
+        position: relative;
+        margin: 0 auto;
+        top: 40%;
+        width: 138px;
+        height: 54px;
+        font-size: 1.2rem;
+        background: transparent;
+        border: 1px solid #333;
+        /* margin-top: 250px; */
+        line-height: 50px;
+        cursor: pointer;
     }
 }

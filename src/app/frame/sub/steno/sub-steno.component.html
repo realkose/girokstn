@@ -1,0 +1,66 @@
+<section id="subSteno" class="subSteno">
+    <nav class="sub-menu nav-items">
+        <div class="header-menu">
+            <ul>
+                <li><a id="stenoTabNo1" class="active" (click)="onClickTab(1)">출장속기</a></li>
+                <li><a id="stenoTabNo2" (click)="onClickTab(2)">실시간출장속기</a></li>
+                <li><a id="stenoTabNo3" (click)="onClickTab(3)">실시간자막속기</a></li>
+                <li><a id="stenoTabNo4" (click)="onClickTab(4)">실시간통역속기</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article *ngIf="tabNo === 1">
+        <div class="clearfix">
+            <div class="steno-image1"></div>
+            <div class="steno-image2"></div>
+        </div>
+
+        <p class="clearfix">재개발/재건축, 각종 이사회/주주총회/공청회/세미나/포럼/컨퍼런스/워크숍/위원회 회의록) </p>
+        <p>회의 및 행사장에 직접 속기사가 가지 않고 녹음파일만 전달이 됐을 경우에는 발화자 구분 및 회의장 상황 파악이 어려워 회의록 작성 시간과 비용이 추가로 발생할 수 있습니다. <br/> 기록속기사무소에서는 현장회의 경험이 풍부한 속기사가 직접 회의장에 가서 환경에 맞게 녹음기를 설치하기 때문에 양질의 회의록을 제공합니다. </p>
+        <p>(다수의 녹음기로 녹음된 회의음성을 회의록 3부와 함께 CD로 드립니다.)</p>
+    </article>
+
+    <article *ngIf="tabNo === 2" class="foreign">
+        <ul class="main-shape">
+            <li class="circle">상담 및 의뢰</li>
+            <li class="circle">비용 결정 및 계약</li>
+            <li class="circle">출장속기 및 회의록제공</li>
+        </ul>
+        <p class="clearfix">
+            (실시간회의록보다 정확한 회의록을 원하시는 경우에는 1-2일 이내 추가번문한 회의록을 제공해 드립니다)
+        </p>
+        <div class="clearfix">
+            <div class="steno-image3"></div>
+        </div>
+        <p>
+            (회의 종료 직후 회의록이 필요할 경우)</p>
+        <p>
+            신속한 회의록 제공을 위해서 숙련된 속기사 2인이 현장에 나가 초안작성과 번문작업을 동시에 하여 회의종료 후 1-2시간 이내에 휴대용프린터로 출력까지 해드리는 서비스입니다. 단, 번문시간이 짧기 때문에 오탈자가 있을 수 있으며 작업시간은 총 회의시간과 환경에 따라 달라질 수 있습니다.
+        </p>
+    </article>
+
+
+    <article *ngIf="tabNo === 3">
+        <div class="clearfix">
+            <div class="steno-image4"></div>
+            <div class="steno-image5"></div>
+        </div>
+
+        <p class="clearfix">(청각장애인이 참석한 회의 등) </p>
+        <p>회의 및 행사내용을 스크린을 통해 실시간으로 문자서비스하는 방식입니다. <br/>2~3일 전에 관련자료를 속기사에게 전달 하여야 정확한 속기서비스가 이루어집니다. </p>
+
+        <iframe width="544" height="306" src="http://serviceapi.nmv.naver.com/flash/convertIframeTag.nhn?vid=1E071F6A660FAC40E2979E087BC053F6ECCC&outKey=V1241ad08f07e723dea898880c6dfa2b1982a3cfc52ae975c2afc8880c6dfa2b1982a" frameborder="no" scrolling="no" title="NaverVideo"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </article>
+
+    <article *ngIf="tabNo === 4">
+        <div class="steno-translate">
+            <p>
+                회의 및 행사내용을 스크린을 통해 실시간으로 문자서비스하는 방식으로, 사전에 통역사와도 일정을 조율해야 하므로 최소 30일 전에 신청 하셔야 합니다
+            </p>
+        </div>
+    </article>
+
+
+</section>

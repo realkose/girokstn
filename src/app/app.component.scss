@@ -8,7 +8,7 @@ app-header {
     z-index: 100;
 }
 
-app-main {
+router-outlet {
     position: absolute;
     top: 0;
     left: 0;

@@ -15,4 +15,17 @@ body {
         text-decoration: none;
         color: black;
     }
+    .main-btn {
+        transition: all 0.5s;
+        background: transparent;
+    }
+    .main-btn:hover {
+        transition: all 0.5s;
+        color: black;
+        background: rgba(255, 255, 255, 1) !important;
+    }
+    .main-btn.black-btn:hover {
+        color: white !important;
+        background: rgba(0, 0, 0, 1) !important;
+    }
 }
