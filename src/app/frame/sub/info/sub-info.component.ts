@@ -26,6 +26,6 @@ export class SubInfoComponent implements OnInit {
       $('#infoTabNo3').addClass('active');  
     }
     this.tabNo = tabNo;
-    console.log(this.tabNo);
+    // console.log(this.tabNo);
   }
 }

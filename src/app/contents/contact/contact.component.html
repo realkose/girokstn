@@ -13,20 +13,23 @@
     <article class="quick">
         <div class="textBox">
             <h2>빠른상담</h2>
-            <p>궁금하신 내용을 적어주시면 담당자 확인 후 연락드리겠습니다.</p>
+            <p></p>
+            <p>궁금하신 내용을 적어주시면 <br />담당자 확인 후 연락드리겠습니다.</p>
+            <!--<p><strong>(준비중입니다. 010-2631-2229로 연락주세요.)</strong></p>-->
         </div>
         <div class="form">
             <form>
                 <div class="input-group">
-                    <input type="text" name="name" class="form-control" placeholder="이름" (click)="alert()">
-                    <input type="text" name="contact" class="form-control" placeholder="연락처" (click)="alert()">
+                    <input type="text" name="name" class="form-control" placeholder="이름" #newName>
+                    <input type="text" name="contact" class="form-control" placeholder="연락처" #newContact>
                 </div>
                 <div class="input-group">
-                    <input type="text" name="email" class="form-control" placeholder="이메일" (click)="alert()">
+                    <input type="text" name="email" class="form-control" placeholder="이메일" #newEmail>
                 </div>
                 <div class="input-group">
-                    <textarea name="desc" class="form-control" placeholder="내용" (click)="alert()"></textarea>
-                    <button class="btn-query" (click)="alert()">문의하기</button>
+                    <textarea name="desc" class="form-control" placeholder="내용" #newDesc></textarea>
+                    <!--<button class="btn-query" (click)="alert()" disabled>문의하기</button>-->
+                    <input type="submit" class="btn-query" value="문의하기" (click)="onSubmit(newName.value, newContact.value, newEmail.value, newDesc.value, $event)">
                 </div>
             </form>
         </div>

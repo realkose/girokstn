@@ -37,7 +37,7 @@ export class MainComponent implements OnInit, OnDestroy{
   }
 
 moveMain(menu) {
-  console.log('move!' + menu);
+  // console.log('move!' + menu);
   if (menu === 'appInfo') {
     this.fullpage.moveTo('firstPage');  
   } else if (menu === 'appRecording') {

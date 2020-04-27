@@ -1,31 +1,284 @@
-/* You can add global styles to this file, and also import other style files */
-
-body {
-    font-family: 'Nanum Gothic', sans-serif;
-    padding: 0;
-    margin: 0;
-    ul {
-        margin: 0;
-        padding: 0;
-        li {
-            text-decoration: none;
-        }
-    }
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    .main-btn {
-        transition: all 0.5s;
-        background: transparent;
-    }
-    .main-btn:hover {
-        transition: all 0.5s;
-        color: black;
-        background: rgba(255, 255, 255, 1) !important;
-    }
-    .main-btn.black-btn:hover {
-        color: white !important;
-        background: rgba(0, 0, 0, 1) !important;
-    }
-}
+                                /* You can add global styles to this file, and also import other style files */
+                                
+                                #mi_defender_img1 {
+                                    top: 70px !important;
+                                    left: 5px !important;
+                                }
+                                
+                                body {
+                                    font-family: 'Nanum Gothic', sans-serif;
+                                    padding: 0;
+                                    margin: 0;
+                                    -webkit-overflow-scrolling: touch;
+                                    ul {
+                                        margin: 0;
+                                        padding: 0;
+                                        li {
+                                            text-decoration: none;
+                                        }
+                                    }
+                                    a {
+                                        text-decoration: none;
+                                        color: black;
+                                    }
+                                    .main-btn {
+                                        transition: all 0.5s;
+                                        background: transparent;
+                                    }
+                                    .main-btn:hover {
+                                        transition: all 0.5s;
+                                        color: black;
+                                        background: rgba(255, 255, 255, 1) !important;
+                                    }
+                                    .main-btn.black-btn:hover {
+                                        color: white !important;
+                                        background: rgba(0, 0, 0, 1) !important;
+                                    }
+                                }
+                                
+                                @media screen and (max-width: 600px) {
+                                    body {
+                                        header#header {
+                                            .header-logo {
+                                                position: absolute;
+                                                top: 12px;
+                                                left: 20px;
+                                            }
+                                            .header-btn i {
+                                                display: inline-block;
+                                                position: absolute;
+                                                top: 20px;
+                                                right: 12px;
+                                                font-size: 1.5rem;
+                                            }
+                                            .header-menu {
+                                                display: none;
+                                                position: fixed;
+                                                // display: block;
+                                                top: 66px;
+                                                width: 100%;
+                                                height: 300px;
+                                                background: rgba(0, 0, 0, 0.5);
+                                                ul {
+                                                    padding: 0;
+                                                    li {
+                                                        display: block;
+                                                        text-align: center;
+                                                        margin-left: 0;
+                                                        a {
+                                                            color: #fff;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .header-menu.active {
+                                                display: block;
+                                            }
+                                            .desk-add-menu a:before,
+                                            .nav-items a:before,
+                                            .nav-items .active a:before {
+                                                display: none;
+                                            }
+                                        }
+                                        .main {
+                                            .info#appInfo {
+                                                background-color: #444;
+                                                background-size: contain;
+                                                div.textBox {
+                                                    width: calc(100% - 30px);
+                                                    min-width: auto;
+                                                    left: 15px;
+                                                    .title {
+                                                        background-size: 80px;
+                                                        overflow: hidden;
+                                                        width: 73px;
+                                                        margin-bottom: 3rem;
+                                                    }
+                                                    div.btn-info {
+                                                        margin-top: 2rem;
+                                                    }
+                                                }
+                                            }
+                                            .recording#appRecording {
+                                                div.textBox {
+                                                    top: 0;
+                                                    left: 0;
+                                                    width: 100%;
+                                                    min-width: auto;
+                                                    padding: 10px;
+                                                    div.btn-recording {
+                                                        margin-top: 20px;
+                                                    }
+                                                }
+                                            }
+                                            .steno#appSteno {
+                                                div.textBox {
+                                                    top: 0;
+                                                    left: 0;
+                                                    width: 100%;
+                                                    min-width: auto;
+                                                    div.btn-steno {
+                                                        margin-top: 20px;
+                                                    }
+                                                }
+                                            }
+                                            .process#appProcess {
+                                                div.textBox {
+                                                    top: 0;
+                                                    left: 0;
+                                                    width: 100%;
+                                                    min-width: auto;
+                                                    .title {
+                                                        font-size: 2.5rem;
+                                                    }
+                                                }
+                                                .main-shape {
+                                                    top: 30px;
+                                                    width: 100%;
+                                                    min-width: auto;
+                                                    .circle {
+                                                        font-size: 0.5rem;
+                                                        width: 100px;
+                                                        height: 100px;
+                                                        position: relative;
+                                                        line-height: 95px;
+                                                        margin: 0 10px;
+                                                    }
+                                                    .circle:after {
+                                                        content: none;
+                                                    }
+                                                }
+                                                div.btn-process {
+                                                    position: relative;
+                                                    margin: 0 auto;
+                                                    top: 80px;
+                                                }
+                                            }
+                                            section app-contact {
+                                                height: 80% !important;
+                                                #appContact {
+                                                    .location {
+                                                        display: none;
+                                                    }
+                                                    .quick {
+                                                        width: 100%;
+                                                        div.textBox {
+                                                            top: 5%;
+                                                            left: 0;
+                                                            width: 100%;
+                                                            min-width: auto;
+                                                            font-size: 0.9rem;
+                                                            padding: 15px;
+                                                        }
+                                                        .form {
+                                                            top: 20px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            app-footer {
+                                                height: 100%;
+                                                .footer {
+                                                    text-align: left;
+                                                    line-height: 1rem;
+                                                    span {
+                                                        padding-top: 4px !important;
+                                                        font-size: 0.6rem !important;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .ico-kakao {
+                                            bottom: 20px !important;
+                                            right: 20px !important;
+                                        }
+                                        .ico-contact {
+                                            bottom: 105px !important;
+                                            right: 20px !important;
+                                        }
+                                        #subPage {
+                                            section {
+                                                padding: 50px 15px 0;
+                                                min-height: calc(100% - 120px);
+                                                nav {
+                                                    top: 30px;
+                                                    margin-bottom: 10px;
+                                                    ul li {
+                                                        margin-right: 20px;
+                                                    }
+                                                }
+                                                article {
+                                                    top: 30px;
+                                                    font-size: 0.8rem;
+                                                    div.info-greeting,
+                                                    div.recording-foreign,
+                                                    div.recording-mic,
+                                                    div.steno-translate {
+                                                        min-height: auto;
+                                                        padding: 0px;
+                                                        padding-top: 70%;
+                                                        background-size: 100%;
+                                                        margin-bottom: 50px;
+                                                        line-height: 1.5rem;
+                                                    }
+                                                    .recording-meeting {
+                                                        background-size: 100%;
+                                                    }
+                                                    .recording-form {
+                                                        display: none;
+                                                    }
+                                                    .steno-image1,
+                                                    .steno-image2,
+                                                    .steno-image3,
+                                                    .steno-image4,
+                                                    .steno-image5 {
+                                                        width: 100%;
+                                                        height: 270px;
+                                                        min-height: auto;
+                                                    }
+                                                    .main-shape {
+                                                        min-width: auto;
+                                                        .circle {
+                                                            font-size: 0.6rem;
+                                                            width: 120px;
+                                                            height: 120px;
+                                                            position: relative;
+                                                            line-height: 115px;
+                                                            margin: 20px 100px;
+                                                        }
+                                                        .circle:after {
+                                                            content: none;
+                                                        }
+                                                    }
+                                                    iframe {
+                                                        width: 100%;
+                                                    }
+                                                }
+                                                article.history {
+                                                    .info-pic {
+                                                        height: auto;
+                                                        background-size: 100%;
+                                                        padding-left: 0;
+                                                        padding-top: 150%;
+                                                        line-height: 1.2rem;
+                                                        font-size: 0.8rem;
+                                                        background-position: left top;
+                                                        margin-bottom: 50px;
+                                                    }
+                                                    .info-reverse {
+                                                        text-align: left;
+                                                        padding-right: 0;
+                                                    }
+                                                }
+                                            }
+                                            .footer {
+                                                text-align: left;
+                                                line-height: 1rem;
+                                                span {
+                                                    padding-top: 4px !important;
+                                                    font-size: 0.6rem !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }

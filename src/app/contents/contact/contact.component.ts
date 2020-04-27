@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms'; 
+import * as firebase from "firebase";
 
 @Component({
   selector: 'app-contact',
@@ -18,5 +20,17 @@ export class ContactComponent implements OnInit {
   alert() {
     window.alert('준비중입니다.');
   }
-  
-}
+
+  onSubmit(newName, newContact, newEmail, newDesc, e) {
+      e.preventDefault();
+      // console.log('Hello', newName, newContact, newEmail, newDesc);
+        firebase.firestore().collection('contact').add({
+            newName,
+            newContact,
+            newEmail,
+            newDesc
+        }).then(r => {
+            console.log(r);
+            alert('문의사항이 정상적으로 접수되었습니다.');
+        });
+  }}

@@ -16,6 +16,9 @@ header {
         background-size: cover;
         cursor: pointer;
     }
+    .header-btn i {
+        display: none;
+    }
     .header-menu {
         ul {
             text-align: right;
@@ -40,7 +43,7 @@ header {
     }
     .desk-add-menu a:before,
     .nav-items a:before,
-    .nav-items .active a:before {
+    .nav-items .active>a:before {
         content: "";
         position: absolute;
         left: 0;
@@ -62,7 +65,7 @@ header {
     .desk-add-menu a.active:before,
     .nav-items a:hover:before,
     .nav-items a.active:before,
-    .nav-items .active a:before {
+    .nav-items .active>a:before {
         width: 100%;
     }
 }

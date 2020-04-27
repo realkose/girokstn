@@ -37,4 +37,12 @@ export class HeaderComponent implements OnInit {
       //   this.clickMenu.emit(menu);
       // }
   }
+
+  onClickBtn() {
+    $('#header-menu').toggleClass('active');   
+  }
+
+  onClickMenus(){
+    $('#header-menu').toggleClass('active');       
+  }
 }

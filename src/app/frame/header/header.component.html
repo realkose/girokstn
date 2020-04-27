@@ -1,8 +1,9 @@
 <header id="header">
     <div class="nav-items">
-        <div routerLink="/" class=" header-logo ">
+        <div routerLink="/" class="header-logo ">
         </div>
-        <div class="header-menu">
+        <div class="header-btn"><i id="header-btn" class="fas fa-bars" (click)="onClickBtn()"></i></div>
+        <div id="header-menu" class="header-menu" (click)="onClickMenus()">
             <ul id="mainMenu">
                 <li data-menuanchor="firstPage"><a id="appInfo" class="headerAppInfo active" (click)="onClickMenu('appInfo')">회사소개</a></li>
                 <li data-menuanchor="secondPage"><a id="appRecording" class="headerAppRecording" (click)="onClickMenu('appRecording')">녹취서비스</a></li>

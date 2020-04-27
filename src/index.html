@@ -6,14 +6,27 @@
     <title>기록속기사무소</title>
     <base href="/">
 
+    <!-- 소유확인 -->
+    <meta name="naver-site-verification" content="f2293035e1c292b8c9469f83381d21f95804ef82" />
+    <!-- 뷰포트 설정 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <!-- 사이트 설명 -->
+    <meta name="description" content="정확한 기록을 제공하는 기록속기사무소입니다. 기록속기사무소에서는 고품질의 녹취록, 회의록, 출장속기, 실시간 자막지원 서비스를 전문으로 하고 있습니다. 저희의 기록이 고객님께 도움이 되도록 최선을 다하겠습니다.">
+    <!-- 오픈그래프 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="기록속기사무소">
+    <meta property="og:description" content="정확한 기록을 제공하는 기록속기사무소입니다. 기록속기사무소에서는 고품질의 녹취록, 회의록, 출장속기, 실시간 자막지원 서비스를 전문으로 하고 있습니다. 저희의 기록이 고객님께 도움이 되도록 최선을 다하겠습니다.">
+    <meta property="og:image" content="http://girokstn.com/logo.png">
+    <meta property="og:url" content="http://girokstn.com">
 
+    <!-- 파비콘 설정 -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- 웹폰트 나눔고딕 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
@@ -21,6 +34,17 @@
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-messaging.js"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134840163-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-134840163-1');
+    </script>
 
 </head>
 
@@ -32,6 +56,32 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js">
+    </script>
+    <script type="text/javascript">
+        if (!wcs_add) var wcs_add = {};
+        wcs_add["wa"] = "s_2cb54f74ad75";
+        if (!_nasa) var _nasa = {};
+        wcs.inflow();
+        wcs_do(_nasa);
+    </script>
+
+    <!-- Mirae Log Analysis Script Ver 1.0   -->
+    <script TYPE="text/javascript">
+        var mi_adkey = "opsek";
+        var mi_is_defender = "";
+        var mi_dt = new Date(),
+            mi_y = mi_dt.getFullYear(),
+            mi_m = mi_dt.getMonth() + 1,
+            mi_d = mi_dt.getDate(),
+            mi_h = mi_dt.getHours();
+        var mi_date = "" + mi_y + (mi_m <= 9 ? "0" : "") + mi_m + (mi_d <= 9 ? "0" : "") + mi_d + (mi_h <= 9 ? "0" : "") + mi_h;
+        var mi_script = "<scr" + "ipt " + "type='text/javascr" + "ipt' src='//log1.toup.net/mirae_log.js?t=" + mi_date + "' charset='utf-8' async='true'></scr" + "ipt>";
+        document.writeln(mi_script);
+    </script>
+    <!-- Mirae Log Analysis Script END  -->
 </body>
 
 </html>

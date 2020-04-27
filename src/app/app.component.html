@@ -1,6 +1,9 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
     <app-header (clickMenu)="moveMenu($event)"></app-header>
+    <div class="ico-kakao"><a class="yellow" href="https://pf.kakao.com/_hItxgC" target="_blank"><i class="fas fa-comment"></i></a></div>
+    <div class="ico-contact"><a class="yellow" href="/#fifthPage"><i class="fas fa-phone"></i></a></div>
+
     <router-outlet #viewChild (activate)="onActivate($event)"></router-outlet>
     <!--<app-main></app-main>-->
     <!--<app-footer></app-footer>-->

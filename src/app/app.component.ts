@@ -26,7 +26,6 @@ export class AppComponent {
     if (isSub.length > 0) {
       return false;
     } else {
-      console.log('main');
       this.main = componentRef;
     }
   }
@@ -34,7 +33,6 @@ export class AppComponent {
   moveMenu(menu: string) {
     let isSub = $('#subPage');
     
-    console.log(isSub);
     if (isSub.length > 0) {
       if (menu === 'appInfo') {
         this.redirector.navigate(['/sub/info']);
