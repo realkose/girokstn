@@ -29,7 +29,7 @@
         "cors": "^2.8.5",
         "firebase": "^5.11.1",
         "firebase-tools": "^4.2.1",
-        "fullpage.js": "^3.0.7",
+        "fullpage.js": "^4.0.5",
         "jasminewd2": "^2.2.0",
         "ngx-fullpage": "^4.0.6",
         "ngx-page-scroll": "^5.0.1",
